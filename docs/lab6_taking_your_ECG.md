@@ -48,11 +48,11 @@ Note the headphone jack. This is not for plugging in headphones, though\! Instea
 
 Here is a picture of what your final assembly will look like (but without the scope probe):
 
-![][assets/image1.png]
+![](assets/image1.png)
 
 Here’s a schematic diagram:
 
-![][assets/image2.png]
+![](assets/image2.png)
 
 How do the boards get powered? As usual, the USB cord supplies power to the Nucleo board (and allows the Nucleo board to talk to a host). USB supplies 5V; the Nucleo board has an internal voltage regulator that regulates 5V down to 3.3V and drives it out to supply the AD8232 board. Running a full 5V into the AD8232 would likely fry it.
 
@@ -80,7 +80,7 @@ The course website has a short video on how to attach the electrodes.
 
 Hook up a scope probe to sample the AD8232 output (i.e., to view the wire from the AD8232 OUTPUT pin to the Nucleo A0 pin). Make sure you connect the scope’s ground to the breadboard ground. Use scan mode, with about .5s per horizontal division and 1V per vertical division. Your ECG will probably have something close to the classic shape below
 
-*![][assets/image3.png]*
+*![](assets/image3.png)*
 
 Again, to use the instructor’s ECG, you would build the Nucleo project (as detailed below), and take the output from Nucleo pin A3. You would use *task\_canned\_ECG*(); note that you must learn how to use this code for the lab checkout in any case.
 
